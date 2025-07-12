@@ -501,4 +501,4 @@ Xray() {
     esac
 }
 
-Xray
+Xray "$@"
