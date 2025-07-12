@@ -1,28 +1,3 @@
-#!/bin/bash
-
-# Xray 一键安装脚本
-# 版本: v25.6.8
-# 更新时间: $(date +%Y-%m-%d)
-
-set -e  # 遇到错误立即退出
-
-# 检查是否为root用户
-if [[ $EUID -ne 0 ]]; then
-   echo "错误: 此脚本需要root权限运行"
-   echo "请使用: sudo $0"
-   exit 1
-fi
-
-# 检查系统类型
-if [[ ! -f /etc/os-release ]]; then
-    echo "错误: 无法检测系统类型"
-    exit 1
-fi
-
-echo "=== Xray 一键安装脚本 ==="
-echo "版本: v25.6.8"
-echo "开始安装..."
-
 DEFAULT_START_PORT=20000                         #默认起始端口
 DEFAULT_SOCKS_USERNAME="userb"                   #默认socks账号
 DEFAULT_SOCKS_PASSWORD="passwordb"               #默认socks密码
@@ -143,12 +118,14 @@ main() {
 	fi
 }
 main "$@"
-
-echo "=== 安装完成 ==="
-echo "Xray 服务已启动并设置为开机自启"
-echo "配置文件位置: /etc/xrayL/config.toml"
-echo "服务管理命令:"
-echo "  启动: systemctl start xrayL"
-echo "  停止: systemctl stop xrayL"
-echo "  重启: systemctl restart xrayL"
-echo "  状态: systemctl status xrayL"
+🦉
+跟随浮窗开关
+固定浮窗开关
+🖱️单击复制坐标
+指纹检测
+实战代码
+📋️自动填表
+⏱️元素复制历史
+复制猫头鹰处坐标
+复制>
+帮助>
